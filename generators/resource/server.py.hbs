@@ -1,0 +1,17 @@
+"""
+
+  {{ properCase ResourceName }} Router
+
+"""
+from fastapi import APIRouter
+
+
+router = APIRouter(
+    prefix="/{{ ResourceName }}",
+    tags=["{{ ResourceName }}"],
+    responses={404: {"description": "Not found"}},
+)
+
+@router.get("/", tags=["{{ ResourceName }}"])
+async def index():
+    return {"data": "Hello from the {{ ResourceName }} router!"}

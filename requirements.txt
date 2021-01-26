@@ -1,0 +1,18 @@
+fastapi==0.63.0
+pydantic==1.7.3
+pymongo==3.11.2
+python-json-logger==2.0.1
+python-multipart==0.0.5
+requests==2.25.1
+uvicorn==0.13.3
+omegaconf==2.0.6
+
+# Dev Dependencies
+codecov==2.1.11
+coverage==5.3.1
+devtools==0.6.1
+mypy==0.790
+pytest-asyncio==0.14.0
+pytest-cov==2.10.1
+pytest-mock==3.5.1
+pytest==6.2.1

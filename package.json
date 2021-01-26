@@ -1,0 +1,27 @@
+{
+  "name": "migrations",
+  "version": "1.0.0",
+  "description": "This repository contains all of the migrations that have been written for our MongoDB instance",
+  "main": "index.js",
+  "scripts": {
+    "generate": "plop --plopfile generators/plopfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.reggora.com/Reggora/migrations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "node-plop": "0.25.0",
+    "path": "^0.12.7",
+    "plop": "2.6.0",
+    "shelljs": "^0.8.4",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

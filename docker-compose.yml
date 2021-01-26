@@ -1,0 +1,14 @@
+networks:
+  default:
+    external:
+      name: microservice-network
+
+services:
+  server:
+    build:
+      context: .
+    command: uvicorn src.server.main:app --host 0.0.0.0 --reload
+    volumes:
+      - '.:/usr/src/app'
+    ports:
+      - "8000"
